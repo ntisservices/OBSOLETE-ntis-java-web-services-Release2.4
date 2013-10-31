@@ -41,7 +41,7 @@ public class FVDTrafficDataServiceImpl implements TrafficDataService {
     @Override
     public void handle(D2LogicalModel d2LogicalModel) {
 
-        LOG.info("handling SpeedFVD Request !");
+        LOG.info("handling Fused FVD and Sensor PTD Request !");
 
         ElaboratedDataPublication elaboratedDataPublication = null;
 
@@ -61,7 +61,7 @@ public class FVDTrafficDataServiceImpl implements TrafficDataService {
         } catch (Exception e) {
             LOG.error(e.getMessage());
         }
-        LOG.info("SpeedFVD Request: Processing Completed Successfuly");
+        LOG.info("Fused FVD and Sensor PTD Request: Processing Completed Successfuly");
     }
 
     private List<ElaboratedData> getElaboratedDataListFor(List<ElaboratedData> payLoadElaboratedDataList,

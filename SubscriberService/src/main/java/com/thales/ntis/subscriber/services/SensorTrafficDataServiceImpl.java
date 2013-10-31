@@ -34,7 +34,7 @@ public class SensorTrafficDataServiceImpl implements TrafficDataService {
 
     @Override
     public void handle(D2LogicalModel d2LogicalModel) {
-        LOG.info("handling SpeedSensor Request !");
+        LOG.info("handling Fused Sensor-only PTD Request !");
 
         ElaboratedDataPublication elaboratedDataPublication = null;
 
@@ -50,7 +50,7 @@ public class SensorTrafficDataServiceImpl implements TrafficDataService {
         } catch (Exception e) {
             LOG.error(e.getMessage());
         }
-        LOG.info("SpeedSensor Request: Processing Completed Successfuly");
+        LOG.info("Fused Sensor-only PTD Request: Processing Completed Successfuly");
     }
 
 }

@@ -20,7 +20,7 @@ Note: Versions listed above are those used to test the install/build process, ea
 
 2. Set System environment variable
 
-JAVA_HOME=<INSTALLED JDK Directory>
+JAVA_HOME = \<INSTALLED JDK Directory\>
 
 Note: All other Java libraries are downloaded and installed during the gradle-based build process.
 
@@ -28,7 +28,7 @@ Note: All other Java libraries are downloaded and installed during the gradle-ba
 Importing Project in to eclipse:
 ---------------------------------
 
-1. Download Subscriber Service example application from https://github.com/ntisservices/ntis-java-web-services/archive/master.zip
+1. Download Subscriber Service example application from https://github.com/ntisservices/ntis-java-web-services-Release2.4/archive/master.zip
 
 2. Extract zip file in some location on your local file system.
 
@@ -62,7 +62,7 @@ Following are three configurations to start and stop the Jetty server which runs
 
    - Set the Location to: <gradle home>/bin/gradle
 
-   - Set the working directory to: ${workspace_loc}/SubscriberService
+   - Set the working directory to: ${workspace_loc:/SubscriberService}
 
    - Specify arguments: -i ec jettyRunWar
 	Where:
@@ -86,7 +86,7 @@ Following are three configurations to start and stop the Jetty server which runs
 
    - Set the Location to: <gradle home>/bin/gradle
 
-   - Set the working directory to: ${workspace_loc}/SubscriberService
+   - Set the working directory to: ${workspace_loc:/SubscriberService}
 
    - Specify arguments: -i jettyStop
 
@@ -111,7 +111,7 @@ Following are three configurations to start and stop the Jetty server which runs
 
    - Set the Location to: <gradle home>/bin/gradle
 
-   - Set the working directory to: ${workspace_loc}/SubscriberService
+   - Set the working directory to: ${workspace_loc:/SubscriberService}
 
    - Specify arguments: -i build
 
@@ -131,6 +131,8 @@ Build/Run Jetty Server:
 Select Run –> External Tool –> 'Start Subscriber Service'.
 
 When you run 'Start Subscriber Service' command it will execute the Gradle  command and output the result in the Eclipse console view.
+
+Select the project in Project Explorer, right click and refresh it.
 
 wsdl could be accessed from http://localhost:8880/SubscriberService/services/push.wsdl 
 
