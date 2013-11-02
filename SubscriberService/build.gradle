@@ -58,7 +58,7 @@ deployTomcat.dependsOn(war)
 
 
 //This is the port where Jetty will be running. Amend accordingly.
-httpPort = 8880
+httpPort =8080
 stopPort = 8890
 stopKey = 'foo'
 

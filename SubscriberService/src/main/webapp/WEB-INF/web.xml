@@ -41,18 +41,12 @@
   
   <servlet-mapping>
     <servlet-name>subscriber</servlet-name>
-    <url-pattern>/services/*</url-pattern>
+    <url-pattern>/services/subscriber/one</url-pattern>
+    <url-pattern>/services/push.wsdl</url-pattern>
   </servlet-mapping>
 
-  
-  <!--  
-  <servlet-mapping>
-    <servlet-name>subscriber</servlet-name>
-    <url-pattern>/*</url-pattern>
-  </servlet-mapping> -->
-
   <welcome-file-list>
-    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
   </welcome-file-list>
 
 </web-app>
